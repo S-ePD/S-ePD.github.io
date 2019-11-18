@@ -1,0 +1,74 @@
+.topnav {
+    background-color: rgb(54, 54, 54);
+    overflow: hidden;
+    font-family: 'roboto';
+    border-radius: 15px;
+    width: 16.2%;
+    margin: auto;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+p {
+    font-family: 'roboto';
+    font-size: 30px;
+    text-align: center;
+}
+ .wrap {
+    margin: auto;
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.card {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+  }
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+.front {
+    background-color: #dbdbdb;
+  }
+.back {
+    background-color: rgb(155, 155, 155);
+    transform: rotateY(180deg);
+    color: #fff;
+    font-family: "roboto";
+    font-size: 30px;
+  }
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+q {
+    color: #ff6e6e;
+    quotes: "\00ab" "\00bb";
+}
