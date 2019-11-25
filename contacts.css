@@ -85,3 +85,9 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+footer{
+	font-family: 'roboto';
+	color: #f2f2f2;
+	font-size: 20px;
+	text-align: center;
+}
